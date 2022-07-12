@@ -1,0 +1,82 @@
+/*设置基础字号10px*/
+html{
+font-size:10px;
+}
+
+#main{
+  margin: 20px 8px 30px 8px;
+  padding: 6rem;
+  border-radius: 5px;
+  background: #b5d2e8;
+}
+
+body{
+font-family:隶书,华文行楷,'Courier New', Courier, monospace;
+font-size: 2.3rem;
+line-height: 1.5;
+text-align: left;
+color:#333;
+margin: 0;
+}
+/*头部图相框的设置*/
+#img-div{
+  background: white;
+  border-radius:2rem;
+  padding: 20px;
+  margin: 0;
+}
+/*响应式 - 小于600px时图相框内边距变小，主体内边距变小，字体变小*/
+@media screen and (max-width:600px){
+  #img-div{padding:10px;}
+  #main{padding:2rem;}
+  body{font-size: 1.7rem;}
+}
+/*头部图像设置*/
+#img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+/*h1标题设置*/
+#title{
+  font-family: 隶书;
+  font-size:4rem;
+}
+/*简介段落设置首行缩进*/
+.center1{
+  text-indent:30px;
+}
+/*下面的引用部分居中*/
+.center2{
+  text-align:center;
+}
+/*最下面文本的设置*/
+.center3{
+  margin-top: 100px;
+  text-align: center;
+}
+/*响应式 - 小于600px时缩小上边距*/
+@media screen and (max-width:600px){
+  .center3{margin-top:50px;}
+}
+
+/*中间部分 创建三个相等的列 */
+.column {
+  float: left;
+  width: 30%;
+  margin: 10px 10px 10px 20px;
+}
+/*列后清除浮动*/
+.directory:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*响应式 - 小于 600 px 时三个列改为上下布局，并修改边距*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin: 5px;
+  }
+}
